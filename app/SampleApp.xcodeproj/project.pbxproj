@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C93A68121C2A9DF200E45ABA /* TVCustomStylesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93A68111C2A9DF200E45ABA /* TVCustomStylesController.m */; };
+		C93A68151C2A9F5400E45ABA /* TVCustomElementsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93A68141C2A9F5400E45ABA /* TVCustomElementsController.m */; };
+		C95846601C255FB100B2AEA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C958465F1C255FB100B2AEA4 /* main.m */; };
+		C95846631C255FB100B2AEA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C95846621C255FB100B2AEA4 /* AppDelegate.m */; };
+		C958466B1C255FB100B2AEA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C958466A1C255FB100B2AEA4 /* Assets.xcassets */; };
+		C9743C801C2566CB0045E233 /* TVExtendedInterfaceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9743C7F1C2566CB0045E233 /* TVExtendedInterfaceCreator.m */; };
+		C9BC00321C25927400F16DA4 /* TVCEAttributedText.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BC00311C25927400F16DA4 /* TVCEAttributedText.m */; };
+		C9BC00361C2592D900F16DA4 /* TVCSTextDecoration.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BC00351C2592D900F16DA4 /* TVCSTextDecoration.m */; };
+		C9BC003B1C259B7F00F16DA4 /* TVCSFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BC003A1C259B7F00F16DA4 /* TVCSFont.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C93A68101C2A9DF200E45ABA /* TVCustomStylesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCustomStylesController.h; sourceTree = "<group>"; };
+		C93A68111C2A9DF200E45ABA /* TVCustomStylesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCustomStylesController.m; sourceTree = "<group>"; };
+		C93A68131C2A9F5400E45ABA /* TVCustomElementsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCustomElementsController.h; sourceTree = "<group>"; };
+		C93A68141C2A9F5400E45ABA /* TVCustomElementsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCustomElementsController.m; sourceTree = "<group>"; };
+		C93A68191C2A9FB900E45ABA /* TVCustomElementProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVCustomElementProtocol.h; sourceTree = "<group>"; };
+		C958465B1C255FB100B2AEA4 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C958465F1C255FB100B2AEA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C95846611C255FB100B2AEA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C95846621C255FB100B2AEA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C958466A1C255FB100B2AEA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C958466C1C255FB100B2AEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9743C7E1C2566CB0045E233 /* TVExtendedInterfaceCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVExtendedInterfaceCreator.h; sourceTree = "<group>"; };
+		C9743C7F1C2566CB0045E233 /* TVExtendedInterfaceCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVExtendedInterfaceCreator.m; sourceTree = "<group>"; };
+		C9BC00301C25927400F16DA4 /* TVCEAttributedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCEAttributedText.h; sourceTree = "<group>"; };
+		C9BC00311C25927400F16DA4 /* TVCEAttributedText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCEAttributedText.m; sourceTree = "<group>"; };
+		C9BC00341C2592D900F16DA4 /* TVCSTextDecoration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCSTextDecoration.h; sourceTree = "<group>"; };
+		C9BC00351C2592D900F16DA4 /* TVCSTextDecoration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCSTextDecoration.m; sourceTree = "<group>"; };
+		C9BC00381C25942A00F16DA4 /* TVCustomStyleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVCustomStyleProtocol.h; sourceTree = "<group>"; };
+		C9BC00391C259B7F00F16DA4 /* TVCSFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCSFont.h; sourceTree = "<group>"; };
+		C9BC003A1C259B7F00F16DA4 /* TVCSFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCSFont.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C95846581C255FB100B2AEA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C95846521C255FB100B2AEA4 = {
+			isa = PBXGroup;
+			children = (
+				C9743C791C2566910045E233 /* TVExtendedInterfaceCreator */,
+				C958465D1C255FB100B2AEA4 /* SampleApp */,
+				C958465C1C255FB100B2AEA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C958465C1C255FB100B2AEA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C958465B1C255FB100B2AEA4 /* SampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C958465D1C255FB100B2AEA4 /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				C95846611C255FB100B2AEA4 /* AppDelegate.h */,
+				C95846621C255FB100B2AEA4 /* AppDelegate.m */,
+				C958466A1C255FB100B2AEA4 /* Assets.xcassets */,
+				C958466C1C255FB100B2AEA4 /* Info.plist */,
+				C958465E1C255FB100B2AEA4 /* Supporting Files */,
+			);
+			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		C958465E1C255FB100B2AEA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C958465F1C255FB100B2AEA4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9743C791C2566910045E233 /* TVExtendedInterfaceCreator */ = {
+			isa = PBXGroup;
+			children = (
+				C9743C7E1C2566CB0045E233 /* TVExtendedInterfaceCreator.h */,
+				C9743C7F1C2566CB0045E233 /* TVExtendedInterfaceCreator.m */,
+				C9BC00331C25928B00F16DA4 /* CustomElements */,
+				C9BC00371C2592DD00F16DA4 /* CustomStyles */,
+			);
+			name = TVExtendedInterfaceCreator;
+			path = ExtendedInterfaceCreator;
+			sourceTree = "<group>";
+		};
+		C9BC00331C25928B00F16DA4 /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				C93A68131C2A9F5400E45ABA /* TVCustomElementsController.h */,
+				C93A68141C2A9F5400E45ABA /* TVCustomElementsController.m */,
+				C93A68191C2A9FB900E45ABA /* TVCustomElementProtocol.h */,
+				C9BC00301C25927400F16DA4 /* TVCEAttributedText.h */,
+				C9BC00311C25927400F16DA4 /* TVCEAttributedText.m */,
+			);
+			name = CustomElements;
+			sourceTree = "<group>";
+		};
+		C9BC00371C2592DD00F16DA4 /* CustomStyles */ = {
+			isa = PBXGroup;
+			children = (
+				C93A68101C2A9DF200E45ABA /* TVCustomStylesController.h */,
+				C93A68111C2A9DF200E45ABA /* TVCustomStylesController.m */,
+				C9BC00381C25942A00F16DA4 /* TVCustomStyleProtocol.h */,
+				C9BC00341C2592D900F16DA4 /* TVCSTextDecoration.h */,
+				C9BC00351C2592D900F16DA4 /* TVCSTextDecoration.m */,
+				C9BC00391C259B7F00F16DA4 /* TVCSFont.h */,
+				C9BC003A1C259B7F00F16DA4 /* TVCSFont.m */,
+			);
+			name = CustomStyles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C958465A1C255FB100B2AEA4 /* SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C958466F1C255FB100B2AEA4 /* Build configuration list for PBXNativeTarget "SampleApp" */;
+			buildPhases = (
+				C95846571C255FB100B2AEA4 /* Sources */,
+				C95846581C255FB100B2AEA4 /* Frameworks */,
+				C95846591C255FB100B2AEA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleApp;
+			productName = SampleApp;
+			productReference = C958465B1C255FB100B2AEA4 /* SampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C95846531C255FB100B2AEA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Goergisn;
+				TargetAttributes = {
+					C958465A1C255FB100B2AEA4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = C95846561C255FB100B2AEA4 /* Build configuration list for PBXProject "SampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C95846521C255FB100B2AEA4;
+			productRefGroup = C958465C1C255FB100B2AEA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C958465A1C255FB100B2AEA4 /* SampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C95846591C255FB100B2AEA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C958466B1C255FB100B2AEA4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C95846571C255FB100B2AEA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95846631C255FB100B2AEA4 /* AppDelegate.m in Sources */,
+				C9BC00321C25927400F16DA4 /* TVCEAttributedText.m in Sources */,
+				C9BC003B1C259B7F00F16DA4 /* TVCSFont.m in Sources */,
+				C93A68151C2A9F5400E45ABA /* TVCustomElementsController.m in Sources */,
+				C95846601C255FB100B2AEA4 /* main.m in Sources */,
+				C9BC00361C2592D900F16DA4 /* TVCSTextDecoration.m in Sources */,
+				C9743C801C2566CB0045E233 /* TVExtendedInterfaceCreator.m in Sources */,
+				C93A68121C2A9DF200E45ABA /* TVCustomStylesController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C958466D1C255FB100B2AEA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		C958466E1C255FB100B2AEA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C95846701C255FB100B2AEA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shopgate.TVMLSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		C95846711C255FB100B2AEA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shopgate.TVMLSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C95846561C255FB100B2AEA4 /* Build configuration list for PBXProject "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C958466D1C255FB100B2AEA4 /* Debug */,
+				C958466E1C255FB100B2AEA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C958466F1C255FB100B2AEA4 /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95846701C255FB100B2AEA4 /* Debug */,
+				C95846711C255FB100B2AEA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C95846531C255FB100B2AEA4 /* Project object */;
+}
