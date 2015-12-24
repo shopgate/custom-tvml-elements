@@ -12,6 +12,7 @@
 
 //Import the Custom Element Classes
 #import "TVCEAttributedText.h"
+#import "TVCEImage.h"
 
 @interface TVCustomElementsController : NSObject
 

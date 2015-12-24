@@ -16,6 +16,8 @@
 		C9BC00321C25927400F16DA4 /* TVCEAttributedText.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BC00311C25927400F16DA4 /* TVCEAttributedText.m */; };
 		C9BC00361C2592D900F16DA4 /* TVCSTextDecoration.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BC00351C2592D900F16DA4 /* TVCSTextDecoration.m */; };
 		C9BC003B1C259B7F00F16DA4 /* TVCSFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BC003A1C259B7F00F16DA4 /* TVCSFont.m */; };
+		C9C0F3721C2BEE600058EF50 /* TVCEImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C0F3711C2BEE600058EF50 /* TVCEImage.m */; };
+		C9C0F3751C2BEF7E0058EF50 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C0F3741C2BEF7E0058EF50 /* UIImage+animatedGIF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,10 @@
 		C9BC00381C25942A00F16DA4 /* TVCustomStyleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVCustomStyleProtocol.h; sourceTree = "<group>"; };
 		C9BC00391C259B7F00F16DA4 /* TVCSFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCSFont.h; sourceTree = "<group>"; };
 		C9BC003A1C259B7F00F16DA4 /* TVCSFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCSFont.m; sourceTree = "<group>"; };
+		C9C0F3701C2BEE600058EF50 /* TVCEImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCEImage.h; sourceTree = "<group>"; };
+		C9C0F3711C2BEE600058EF50 /* TVCEImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCEImage.m; sourceTree = "<group>"; };
+		C9C0F3731C2BEF7E0058EF50 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		C9C0F3741C2BEF7E0058EF50 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 				C93A68191C2A9FB900E45ABA /* TVCustomElementProtocol.h */,
 				C9BC00301C25927400F16DA4 /* TVCEAttributedText.h */,
 				C9BC00311C25927400F16DA4 /* TVCEAttributedText.m */,
+				C9C0F3761C2BEF830058EF50 /* TVCEImage */,
 			);
 			name = CustomElements;
 			sourceTree = "<group>";
@@ -125,6 +132,17 @@
 				C9BC003A1C259B7F00F16DA4 /* TVCSFont.m */,
 			);
 			name = CustomStyles;
+			sourceTree = "<group>";
+		};
+		C9C0F3761C2BEF830058EF50 /* TVCEImage */ = {
+			isa = PBXGroup;
+			children = (
+				C9C0F3731C2BEF7E0058EF50 /* UIImage+animatedGIF.h */,
+				C9C0F3741C2BEF7E0058EF50 /* UIImage+animatedGIF.m */,
+				C9C0F3701C2BEE600058EF50 /* TVCEImage.h */,
+				C9C0F3711C2BEE600058EF50 /* TVCEImage.m */,
+			);
+			name = TVCEImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,10 +216,12 @@
 				C95846631C255FB100B2AEA4 /* AppDelegate.m in Sources */,
 				C9BC00321C25927400F16DA4 /* TVCEAttributedText.m in Sources */,
 				C9BC003B1C259B7F00F16DA4 /* TVCSFont.m in Sources */,
+				C9C0F3751C2BEF7E0058EF50 /* UIImage+animatedGIF.m in Sources */,
 				C93A68151C2A9F5400E45ABA /* TVCustomElementsController.m in Sources */,
 				C95846601C255FB100B2AEA4 /* main.m in Sources */,
 				C9BC00361C2592D900F16DA4 /* TVCSTextDecoration.m in Sources */,
 				C9743C801C2566CB0045E233 /* TVExtendedInterfaceCreator.m in Sources */,
+				C9C0F3721C2BEE600058EF50 /* TVCEImage.m in Sources */,
 				C93A68121C2A9DF200E45ABA /* TVCustomStylesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

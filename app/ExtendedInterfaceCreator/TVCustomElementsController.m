@@ -29,7 +29,7 @@
 
 - (void)defineElements
 {
-    self.customElements = @[[TVCEAttributedText class]];
+    self.customElements = @[[TVCEAttributedText class], [TVCEImage class]];
 }
 
 + (void)registerElements
