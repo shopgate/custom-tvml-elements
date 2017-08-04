@@ -10,14 +10,33 @@
 
 @implementation TVCSTextDecoration
 
-+ (NSString *)name
+#pragma mark - Privates
+
++ (NSAttributedString*)TVCS_attributedStringByApplyingStyle:(TVViewElementStyle*)style styleValue:(NSString*)styleValue toAttributedString:(NSAttributedString*)attributedString
 {
-    return @"tvcs-text-decoration";
+	NSMutableAttributedString* styledAttributedString = [[NSMutableAttributedString alloc] initWithAttributedString:attributedString];
+	
+	NSRange stringRange = NSMakeRange(0, styledAttributedString.length);
+	
+	if ([styleValue isEqualToString:@"line-through"]) {
+		[styledAttributedString addAttribute:NSStrikethroughStyleAttributeName value:@1 range:stringRange];
+	} else if ([styleValue isEqualToString:@"underline"]) {
+		[styledAttributedString addAttribute:NSUnderlineStyleAttributeName value:@1 range:stringRange];
+	}
+	
+	return [styledAttributedString copy];
 }
 
-+ (NSArray *)allowedValues
++ (NSArray*)TVCS_allowedValues
 {
-    return @[@"line-through", @"underline"];
+	return @[@"line-through", @"underline"];
+}
+
+#pragma mark TVCustomStyleProtocol
+
++ (NSString*)name
+{
+    return @"tvcs-text-decoration";
 }
 
 + (TVViewElementStyleType)styleType
@@ -25,31 +44,25 @@
     return TVViewElementStyleTypeString;
 }
 
-+ (Class)viewClass
++ (void)applyStyle:(TVViewElementStyle*)style toView:(UIView*)view
 {
-    return [UILabel class];
-}
-
-+ (void)applyStyle:(TVViewElementStyle *)style toView:(UIView *)view
-{
-    NSString *styleValue = [style valueForStyleProperty:[self name]];
-    
-    if(![view isKindOfClass:[self viewClass]] || !styleValue || ![[self allowedValues] containsObject:styleValue]) {
-        return;
-    }
-    
-    UILabel *label = (UILabel *)view;
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithAttributedString:label.attributedText];
-    NSRange stringRange = NSMakeRange(0, attributedString.length);
-    
-    if ([styleValue isEqualToString:@"line-through"]) {
-        [attributedString addAttribute:NSStrikethroughStyleAttributeName value:@1 range:stringRange];
-    } else if ([styleValue isEqualToString:@"underline"]) {
-        [attributedString addAttribute:NSUnderlineStyleAttributeName value:@1 range:stringRange];
-    }
-    
-    label.attributedText = attributedString;
-    
+    NSString* styleValue = [style valueForStyleProperty:[self name]];
+	
+	if(styleValue == nil || [[self TVCS_allowedValues] containsObject:styleValue] == NO)
+		return;
+	
+	if([view isKindOfClass:[UIButton class]] == YES)
+	{
+		UIButton* button = (UIButton*)view;
+		NSAttributedString* attributedButtonTitle = [button attributedTitleForState:UIControlStateNormal];
+		[button setAttributedTitle:[self TVCS_attributedStringByApplyingStyle:style styleValue:styleValue toAttributedString:attributedButtonTitle]
+						  forState:UIControlStateNormal];
+	}
+	else if([view isKindOfClass:[UILabel class]] == YES)
+	{
+		UILabel* label = (UILabel*)view;
+		label.attributedText = [self TVCS_attributedStringByApplyingStyle:style styleValue:styleValue toAttributedString:label.attributedText];
+	}
 }
 
 @end

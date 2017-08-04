@@ -11,7 +11,16 @@
 
 @implementation TVCEImage
 
-+ (NSString *)name
+#pragma mark - Privates
+
++ (Class)TVCE_existingViewClass
+{
+	return [UIImageView class];
+}
+
+#pragma mark TVCustomElementProtocol
+
++ (NSString*)name
 {
     return @"tvce-image";
 }
@@ -21,22 +30,16 @@
     return [TVImageElement class];
 }
 
-+ (Class)existingViewClass
++ (UIView*)viewForElement:(TVViewElement*)element existingView:(UIView*)existingView
 {
-    return [UIImageView class];
-}
-
-+ (UIView *)viewForElement:(TVViewElement *)element existingView:(UIView *)existingView
-{
-    if (![element isKindOfClass:[self elementClass]] || (existingView && ![existingView isKindOfClass:[self existingViewClass]])) {
-        return nil;
-    }
+	if ([element isKindOfClass:[self elementClass]] == NO || (existingView != nil && [existingView isKindOfClass:[self TVCE_existingViewClass]] == NO))
+		return nil;
+	
+    TVImageElement* imageElement = (TVImageElement*)element;
     
-    TVImageElement *imageElement = (TVImageElement *)element;
+    TVViewElementStyle* style = element.style;
     
-    TVViewElementStyle *style = element.style;
-    
-    UIImageView * view = (UIImageView *)existingView;
+    UIImageView* view = (UIImageView*)existingView;
     if (!view) {
         view = [UIImageView new];
         if (element.style.width && element.style.height) {

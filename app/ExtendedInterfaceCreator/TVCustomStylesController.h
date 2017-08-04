@@ -17,6 +17,6 @@
 @interface TVCustomStylesController : NSObject
 
 + (void)registerStyles;
-+ (void)applyCustomStyle:(TVViewElementStyle *)style toView:(UIView *)view;
++ (void)applyCustomStyle:(TVViewElementStyle*)style toView:(UIView*)view;
 
 @end

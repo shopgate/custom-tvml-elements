@@ -16,24 +16,22 @@
 - (id)init
 {
     self = [super init];
-    if (self) {
-        
+    if(self != nil)
+	{
         [TVCustomElementsController registerElements];
         [TVCustomStylesController registerStyles];
-        
     }
     return self;
 }
 
-- (UIViewController *)viewControllerForElement:(TVViewElement *)element existingViewController:(UIViewController *)existingViewController
+- (UIViewController*)viewControllerForElement:(TVViewElement*)element existingViewController:(UIViewController*)existingViewController
 {
-    //By returning nil we say that we do not handle the creation
-    return nil;
+    return nil; //By returning nil we say that we do not handle the creation
 }
 
-- (UIView *)viewForElement:(TVViewElement *)element existingView:(UIView *)existingView
+- (UIView*)viewForElement:(TVViewElement*)element existingView:(UIView*)existingView
 {
-    return [TVCustomElementsController viewForElement:element existingView:existingView];
+	return [TVCustomElementsController viewForElement:element existingView:existingView];
 }
 
 @end

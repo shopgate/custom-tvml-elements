@@ -10,7 +10,16 @@
 
 @implementation TVCEAttributedText
 
-+ (NSString *)name
+#pragma mark - Privates
+
++ (Class)TVCE_existingViewClass
+{
+	return [UILabel class];
+}
+
+#pragma mark TVCustomElementProtocol
+
++ (NSString*)name
 {
     return @"tvce-attributedText";
 }
@@ -20,37 +29,29 @@
     return [TVTextElement class];
 }
 
-+ (Class)existingViewClass
++ (UIView*)viewForElement:(TVViewElement*)element existingView:(UIView*)existingView
 {
-    return [UILabel class];
-}
-
-+ (UIView *)viewForElement:(TVViewElement *)element existingView:(UIView *)existingView
-{
-    if (![element isKindOfClass:[self elementClass]] || (existingView && ![existingView isKindOfClass:[self existingViewClass]])) {
+    if ([element isKindOfClass:[self elementClass]] == NO || (existingView != nil && [existingView isKindOfClass:[self TVCE_existingViewClass]] == NO))
         return nil;
-    }
     
-    TVTextElement *textElement = (TVTextElement *)element;
+    TVTextElement* textElement = (TVTextElement*)element;
     
-    TVViewElementStyle *style = textElement.style;
+    TVViewElementStyle* style = textElement.style;
     
-    UILabel * attributedLabel = (UILabel *)existingView;
-    if (!attributedLabel) {
+    UILabel* attributedLabel = (UILabel*)existingView;
+    if(attributedLabel == nil)
         attributedLabel = [UILabel new];
-        if (textElement.style.width && textElement.style.height) {
-            attributedLabel.frame = CGRectMake(0, 0, style.width, style.height);
-        }
-    }
     
     attributedLabel.attributedText = textElement.attributedText;
     
     [TVCustomStylesController applyCustomStyle:style toView:attributedLabel];
     
-    if (style.backgroundColor.color) {
+    if (style.backgroundColor.color)
         attributedLabel.backgroundColor = style.backgroundColor.color;
-    }
-    
+	
+	if (textElement.style.width && textElement.style.height)
+		attributedLabel.frame = CGRectMake(0, 0, style.width, style.height);
+	
     return attributedLabel;
 
 }

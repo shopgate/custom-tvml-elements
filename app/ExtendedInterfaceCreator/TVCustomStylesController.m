@@ -10,7 +10,7 @@
 
 @interface TVCustomStylesController()
 
-@property (strong, nonatomic) NSArray *customStyles;
+@property (strong, nonatomic) NSArray* customStyles;
 
 @end
 
@@ -18,7 +18,7 @@
 
 + (instancetype)sharedInstance
 {
-    static TVCustomStylesController * sharedInstance = nil;
+    static TVCustomStylesController* sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [TVCustomStylesController new];
@@ -40,7 +40,7 @@
     }
 }
 
-+ (void)applyCustomStyle:(TVViewElementStyle *)style toView:(UIView *)view
++ (void)applyCustomStyle:(TVViewElementStyle*)style toView:(UIView*)view
 {
     for (Class <TVCustomStyleProtocol>styleDefinition in [TVCustomStylesController sharedInstance].customStyles) {
         [styleDefinition applyStyle:style toView:view];

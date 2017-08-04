@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		603F7CC71F348BE9004F5209 /* TVCEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 603F7CC61F348BE9004F5209 /* TVCEButton.m */; };
 		C93A68121C2A9DF200E45ABA /* TVCustomStylesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93A68111C2A9DF200E45ABA /* TVCustomStylesController.m */; };
 		C93A68151C2A9F5400E45ABA /* TVCustomElementsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93A68141C2A9F5400E45ABA /* TVCustomElementsController.m */; };
 		C95846601C255FB100B2AEA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C958465F1C255FB100B2AEA4 /* main.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		603F7CC51F348BE9004F5209 /* TVCEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCEButton.h; sourceTree = "<group>"; };
+		603F7CC61F348BE9004F5209 /* TVCEButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCEButton.m; sourceTree = "<group>"; };
 		C93A68101C2A9DF200E45ABA /* TVCustomStylesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCustomStylesController.h; sourceTree = "<group>"; };
 		C93A68111C2A9DF200E45ABA /* TVCustomStylesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCustomStylesController.m; sourceTree = "<group>"; };
 		C93A68131C2A9F5400E45ABA /* TVCustomElementsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCustomElementsController.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				C93A68191C2A9FB900E45ABA /* TVCustomElementProtocol.h */,
 				C9BC00301C25927400F16DA4 /* TVCEAttributedText.h */,
 				C9BC00311C25927400F16DA4 /* TVCEAttributedText.m */,
+				603F7CC51F348BE9004F5209 /* TVCEButton.h */,
+				603F7CC61F348BE9004F5209 /* TVCEButton.m */,
 				C9C0F3761C2BEF830058EF50 /* TVCEImage */,
 			);
 			name = CustomElements;
@@ -220,6 +225,7 @@
 				C93A68151C2A9F5400E45ABA /* TVCustomElementsController.m in Sources */,
 				C95846601C255FB100B2AEA4 /* main.m in Sources */,
 				C9BC00361C2592D900F16DA4 /* TVCSTextDecoration.m in Sources */,
+				603F7CC71F348BE9004F5209 /* TVCEButton.m in Sources */,
 				C9743C801C2566CB0045E233 /* TVExtendedInterfaceCreator.m in Sources */,
 				C9C0F3721C2BEE600058EF50 /* TVCEImage.m in Sources */,
 				C93A68121C2A9DF200E45ABA /* TVCustomStylesController.m in Sources */,
