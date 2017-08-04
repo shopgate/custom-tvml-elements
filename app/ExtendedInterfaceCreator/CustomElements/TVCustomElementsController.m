@@ -10,7 +10,7 @@
 
 @interface TVCustomElementsController()
 
-@property (strong, nonatomic) NSArray *customElements;
+@property (strong, nonatomic) NSArray* customElements;
 
 @end
 
@@ -18,7 +18,7 @@
 
 + (instancetype)sharedInstance
 {
-    static TVCustomElementsController * sharedInstance = nil;
+    static TVCustomElementsController* sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [TVCustomElementsController new];
@@ -29,7 +29,10 @@
 
 - (void)defineElements
 {
-    self.customElements = @[[TVCEAttributedText class], [TVCEImage class]];
+    self.customElements = @[[TVCEAttributedText class],
+							[TVCEImage class],
+							[TVCEButton class],
+							];
 }
 
 + (void)registerElements
@@ -39,7 +42,7 @@
     }
 }
 
-+ (UIView *)viewForElement:(TVViewElement *)element existingView:(UIView *)existingView
++ (UIView*)viewForElement:(TVViewElement*)element existingView:(UIView*)existingView
 {
         
     for (Class <TVCustomElementProtocol>elementDefinition in [TVCustomElementsController sharedInstance].customElements) {

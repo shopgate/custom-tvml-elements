@@ -13,10 +13,11 @@
 //Import the Custom Element Classes
 #import "TVCEAttributedText.h"
 #import "TVCEImage.h"
+#import "TVCEButton.h"
 
 @interface TVCustomElementsController : NSObject
 
 + (void)registerElements;
-+ (UIView *)viewForElement:(TVViewElement *)element existingView:(UIView *)existingView;
++ (UIView*)viewForElement:(TVViewElement*)element existingView:(UIView*)existingView;
 
 @end
