@@ -52,7 +52,7 @@
 
 + (Class)TVCE_existingViewClass
 {
-	return [AwesomeButton class];
+	return [CustomButton class];
 }
 
 #pragma mark TVCustomElementProtocol
