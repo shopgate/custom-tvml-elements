@@ -10,9 +10,14 @@
 
 #import "TVCustomStyleProtocol.h"
 
-//Import the Custom Style Classes
-#import "TVCSTextDecoration.h"
+#import "TVCSBackgroundImage.h"
+#import "TVCSBackgroundImageDisabled.h"
+#import "TVCSBackgroundImageFocused.h"
+#import "TVCSBackgroundImageHighlighted.h"
+#import "TVCSBackgroundImageSelected.h"
+#import "TVCSContentMode.h"
 #import "TVCSFont.h"
+#import "TVCSTextDecoration.h"
 
 @interface TVCustomStylesController : NSObject
 

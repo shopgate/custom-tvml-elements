@@ -29,8 +29,15 @@
 
 - (void)defineStyles
 {
-    self.customStyles = @[[TVCSTextDecoration class],
-                          [TVCSFont class]];
+	self.customStyles = @[[TVCSBackgroundImage class],
+						  [TVCSBackgroundImageDisabled class],
+						  [TVCSBackgroundImageFocused class],
+						  [TVCSBackgroundImageHighlighted class],
+						  [TVCSBackgroundImageSelected class],
+						  [TVCSContentMode class],
+						  [TVCSFont class],
+						  [TVCSTextDecoration class],
+						  ];
 }
 
 + (void)registerStyles

@@ -46,9 +46,8 @@
 {
         
     for (Class <TVCustomElementProtocol>elementDefinition in [TVCustomElementsController sharedInstance].customElements) {
-        if ([[elementDefinition name] isEqualToString:element.elementName]) {
-            return [elementDefinition viewForElement:element existingView:existingView];
-        }
+        if([[elementDefinition name] isEqualToString:element.elementName])
+			return [elementDefinition viewForElement:element existingView:existingView];
     }
 
     return nil;
