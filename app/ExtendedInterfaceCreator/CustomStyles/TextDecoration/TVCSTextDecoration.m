@@ -18,11 +18,10 @@
 	
 	NSRange stringRange = NSMakeRange(0, styledAttributedString.length);
 	
-	if ([styleValue isEqualToString:@"line-through"]) {
+	if([styleValue isEqualToString:@"line-through"])
 		[styledAttributedString addAttribute:NSStrikethroughStyleAttributeName value:@1 range:stringRange];
-	} else if ([styleValue isEqualToString:@"underline"]) {
+	else if([styleValue isEqualToString:@"underline"])
 		[styledAttributedString addAttribute:NSUnderlineStyleAttributeName value:@1 range:stringRange];
-	}
 	
 	return [styledAttributedString copy];
 }

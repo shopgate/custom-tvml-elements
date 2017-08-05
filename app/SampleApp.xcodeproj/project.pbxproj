@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		603F7CC71F348BE9004F5209 /* TVCEButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 603F7CC61F348BE9004F5209 /* TVCEButton.m */; };
+		60C89FF31F34C8FD009E46F5 /* TVCSBackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C89FF21F34C8FD009E46F5 /* TVCSBackgroundImage.m */; };
+		60C89FFA1F35E46A009E46F5 /* TVCSContentMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C89FF91F35E46A009E46F5 /* TVCSContentMode.m */; };
+		60C89FFE1F35E768009E46F5 /* TVCSBackgroundImageHighlighted.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C89FFD1F35E768009E46F5 /* TVCSBackgroundImageHighlighted.m */; };
+		60C8A0011F35E7AB009E46F5 /* TVCSBackgroundImageFocused.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8A0001F35E7AB009E46F5 /* TVCSBackgroundImageFocused.m */; };
+		60C8A0041F35E83D009E46F5 /* TVCSBackgroundImageDisabled.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8A0031F35E83D009E46F5 /* TVCSBackgroundImageDisabled.m */; };
+		60C8A0071F35E8D7009E46F5 /* TVCSBackgroundImageSelected.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C8A0061F35E8D7009E46F5 /* TVCSBackgroundImageSelected.m */; };
 		C93A68121C2A9DF200E45ABA /* TVCustomStylesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93A68111C2A9DF200E45ABA /* TVCustomStylesController.m */; };
 		C93A68151C2A9F5400E45ABA /* TVCustomElementsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93A68141C2A9F5400E45ABA /* TVCustomElementsController.m */; };
 		C95846601C255FB100B2AEA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C958465F1C255FB100B2AEA4 /* main.m */; };
@@ -24,6 +30,18 @@
 /* Begin PBXFileReference section */
 		603F7CC51F348BE9004F5209 /* TVCEButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCEButton.h; sourceTree = "<group>"; };
 		603F7CC61F348BE9004F5209 /* TVCEButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCEButton.m; sourceTree = "<group>"; };
+		60C89FF11F34C8FD009E46F5 /* TVCSBackgroundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVCSBackgroundImage.h; path = BackgroundImage/TVCSBackgroundImage.h; sourceTree = "<group>"; };
+		60C89FF21F34C8FD009E46F5 /* TVCSBackgroundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVCSBackgroundImage.m; path = BackgroundImage/TVCSBackgroundImage.m; sourceTree = "<group>"; };
+		60C89FF81F35E46A009E46F5 /* TVCSContentMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVCSContentMode.h; path = ContentMode/TVCSContentMode.h; sourceTree = "<group>"; };
+		60C89FF91F35E46A009E46F5 /* TVCSContentMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVCSContentMode.m; path = ContentMode/TVCSContentMode.m; sourceTree = "<group>"; };
+		60C89FFC1F35E768009E46F5 /* TVCSBackgroundImageHighlighted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVCSBackgroundImageHighlighted.h; path = BackgroundImage/TVCSBackgroundImageHighlighted.h; sourceTree = "<group>"; };
+		60C89FFD1F35E768009E46F5 /* TVCSBackgroundImageHighlighted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVCSBackgroundImageHighlighted.m; path = BackgroundImage/TVCSBackgroundImageHighlighted.m; sourceTree = "<group>"; };
+		60C89FFF1F35E7AB009E46F5 /* TVCSBackgroundImageFocused.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVCSBackgroundImageFocused.h; path = BackgroundImage/TVCSBackgroundImageFocused.h; sourceTree = "<group>"; };
+		60C8A0001F35E7AB009E46F5 /* TVCSBackgroundImageFocused.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVCSBackgroundImageFocused.m; path = BackgroundImage/TVCSBackgroundImageFocused.m; sourceTree = "<group>"; };
+		60C8A0021F35E83D009E46F5 /* TVCSBackgroundImageDisabled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVCSBackgroundImageDisabled.h; path = BackgroundImage/TVCSBackgroundImageDisabled.h; sourceTree = "<group>"; };
+		60C8A0031F35E83D009E46F5 /* TVCSBackgroundImageDisabled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVCSBackgroundImageDisabled.m; path = BackgroundImage/TVCSBackgroundImageDisabled.m; sourceTree = "<group>"; };
+		60C8A0051F35E8D7009E46F5 /* TVCSBackgroundImageSelected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVCSBackgroundImageSelected.h; path = BackgroundImage/TVCSBackgroundImageSelected.h; sourceTree = "<group>"; };
+		60C8A0061F35E8D7009E46F5 /* TVCSBackgroundImageSelected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVCSBackgroundImageSelected.m; path = BackgroundImage/TVCSBackgroundImageSelected.m; sourceTree = "<group>"; };
 		C93A68101C2A9DF200E45ABA /* TVCustomStylesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCustomStylesController.h; sourceTree = "<group>"; };
 		C93A68111C2A9DF200E45ABA /* TVCustomStylesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCustomStylesController.m; sourceTree = "<group>"; };
 		C93A68131C2A9F5400E45ABA /* TVCustomElementsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCustomElementsController.h; sourceTree = "<group>"; };
@@ -97,6 +115,32 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		60C89FF41F34C902009E46F5 /* BackgroundImage */ = {
+			isa = PBXGroup;
+			children = (
+				60C89FF11F34C8FD009E46F5 /* TVCSBackgroundImage.h */,
+				60C89FF21F34C8FD009E46F5 /* TVCSBackgroundImage.m */,
+				60C89FFC1F35E768009E46F5 /* TVCSBackgroundImageHighlighted.h */,
+				60C89FFD1F35E768009E46F5 /* TVCSBackgroundImageHighlighted.m */,
+				60C89FFF1F35E7AB009E46F5 /* TVCSBackgroundImageFocused.h */,
+				60C8A0001F35E7AB009E46F5 /* TVCSBackgroundImageFocused.m */,
+				60C8A0021F35E83D009E46F5 /* TVCSBackgroundImageDisabled.h */,
+				60C8A0031F35E83D009E46F5 /* TVCSBackgroundImageDisabled.m */,
+				60C8A0051F35E8D7009E46F5 /* TVCSBackgroundImageSelected.h */,
+				60C8A0061F35E8D7009E46F5 /* TVCSBackgroundImageSelected.m */,
+			);
+			name = BackgroundImage;
+			sourceTree = "<group>";
+		};
+		60C89FFB1F35E470009E46F5 /* ContentMode */ = {
+			isa = PBXGroup;
+			children = (
+				60C89FF81F35E46A009E46F5 /* TVCSContentMode.h */,
+				60C89FF91F35E46A009E46F5 /* TVCSContentMode.m */,
+			);
+			name = ContentMode;
+			sourceTree = "<group>";
+		};
 		C95846521C255FB100B2AEA4 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +209,8 @@
 				C93A68101C2A9DF200E45ABA /* TVCustomStylesController.h */,
 				C93A68111C2A9DF200E45ABA /* TVCustomStylesController.m */,
 				C9BC00381C25942A00F16DA4 /* TVCustomStyleProtocol.h */,
+				60C89FFB1F35E470009E46F5 /* ContentMode */,
+				60C89FF41F34C902009E46F5 /* BackgroundImage */,
 				603F7CCA1F34BBAB004F5209 /* TextDecoration */,
 				603F7CCB1F34BBB3004F5209 /* Font */,
 			);
@@ -251,15 +297,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C95846631C255FB100B2AEA4 /* AppDelegate.m in Sources */,
+				60C89FFE1F35E768009E46F5 /* TVCSBackgroundImageHighlighted.m in Sources */,
 				C9BC00321C25927400F16DA4 /* TVCEAttributedText.m in Sources */,
+				60C8A0011F35E7AB009E46F5 /* TVCSBackgroundImageFocused.m in Sources */,
 				C9BC003B1C259B7F00F16DA4 /* TVCSFont.m in Sources */,
+				60C89FF31F34C8FD009E46F5 /* TVCSBackgroundImage.m in Sources */,
 				C9C0F3751C2BEF7E0058EF50 /* UIImage+animatedGIF.m in Sources */,
 				C93A68151C2A9F5400E45ABA /* TVCustomElementsController.m in Sources */,
 				C95846601C255FB100B2AEA4 /* main.m in Sources */,
 				C9BC00361C2592D900F16DA4 /* TVCSTextDecoration.m in Sources */,
+				60C8A0071F35E8D7009E46F5 /* TVCSBackgroundImageSelected.m in Sources */,
 				603F7CC71F348BE9004F5209 /* TVCEButton.m in Sources */,
+				60C89FFA1F35E46A009E46F5 /* TVCSContentMode.m in Sources */,
 				C9743C801C2566CB0045E233 /* TVExtendedInterfaceCreator.m in Sources */,
 				C9C0F3721C2BEE600058EF50 /* TVCEImage.m in Sources */,
+				60C8A0041F35E83D009E46F5 /* TVCSBackgroundImageDisabled.m in Sources */,
 				C93A68121C2A9DF200E45ABA /* TVCustomStylesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

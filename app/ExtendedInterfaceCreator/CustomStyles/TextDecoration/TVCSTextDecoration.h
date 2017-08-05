@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "TVCustomStyleProtocol.h"
 
 @interface TVCSTextDecoration : NSObject <TVCustomStyleProtocol>

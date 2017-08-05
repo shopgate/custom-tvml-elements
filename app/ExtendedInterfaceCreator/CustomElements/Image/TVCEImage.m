@@ -32,32 +32,38 @@
 
 + (UIView*)viewForElement:(TVViewElement*)element existingView:(UIView*)existingView
 {
-	if ([element isKindOfClass:[self elementClass]] == NO || (existingView != nil && [existingView isKindOfClass:[self TVCE_existingViewClass]] == NO))
+	if([element isKindOfClass:[self elementClass]] == NO || (existingView != nil && [existingView isKindOfClass:[self TVCE_existingViewClass]] == NO))
 		return nil;
 	
     TVImageElement* imageElement = (TVImageElement*)element;
     
     TVViewElementStyle* style = element.style;
     
-    UIImageView* view = (UIImageView*)existingView;
-    if (!view) {
-        view = [UIImageView new];
-        if (element.style.width && element.style.height) {
-            view.frame = CGRectMake(0, 0, style.width, style.height);
-        }
+    UIImageView* imageView = (UIImageView*)existingView;
+    if(imageView == nil)
+	{
+        imageView = [UIImageView new];
+		imageView.clipsToBounds = YES;
     }
     
-    //Must not be an animated gif url
-    view.image = [UIImage animatedImageWithAnimatedGIFURL:imageElement.URL];
-    view.contentMode = UIViewContentModeScaleAspectFit;
+    //Does not have to be an animated gif url
+    imageView.image = [UIImage animatedImageWithAnimatedGIFURL:imageElement.URL];
     
-    [TVCustomStylesController applyCustomStyle:style toView:view];
+    [TVCustomStylesController applyCustomStyle:style toView:imageView];
     
-    if (style.backgroundColor.color) {
-        view.backgroundColor = style.backgroundColor.color;
-    }
-    
-    return view;
+    if(style.backgroundColor.color)
+        imageView.backgroundColor = style.backgroundColor.color;
+	
+	if(style.width > 0 && style.height > 0)
+		imageView.bounds = CGRectMake(0, 0, style.width, style.height);
+	else if(style.width > 0)
+		imageView.bounds = CGRectMake(0, 0, style.width, [imageView sizeThatFits:CGSizeMake(style.width, CGFLOAT_MAX)].height);
+	else if(style.height > 0)
+		imageView.bounds = CGRectMake(0, 0, [imageView sizeThatFits:CGSizeMake(CGFLOAT_MAX, style.height)].width, style.height);
+	else
+		[imageView sizeToFit];
+	
+    return imageView;
     
 }
 
